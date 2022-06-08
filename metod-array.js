@@ -32,3 +32,40 @@ const films = ['Die hard', 'Terminator', 'Kindergarten Cop'];
 console.log(films.slice()); // ['Die hard', 'Terminator']
 
 
+// .map новый массив из одной пары ключ из объектов
+
+const films = [
+    {
+      id: 0,
+      title: 'Die hard',
+    },
+    {
+      id: 1,
+      title: 'Terminator',
+    },
+  ];
+  
+  const titles = [];
+  
+  films.forEach((film, index) => {
+    titles[index] = film.title;
+  });
+  
+  console.log(titles); // ["Die hard", "Terminator"];
+
+  const films = [
+    {
+      id: 0,
+      title: 'Die hard',
+    },
+    {
+      id: 1,
+      title: 'Terminator',
+    },
+  ];
+  
+  const titles = films.map((film) => {
+    return film.title;
+  });
+  
+  console.log(titles); // ["Die hard", "Terminator"]
