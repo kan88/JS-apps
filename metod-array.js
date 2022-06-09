@@ -80,3 +80,25 @@ const mariaFavoriteFilms = ['Kindergarten Cop'];
 const favoriteFilms = ivanFavoriteFilms.concat(mariaFavoriteFilms);
 
 console.log(favoriteFilms); // ['Die hard', 'Terminator', 'Kindergarten Cop']
+
+
+Метод массива .reverse() «переворачивает» массив с ног на голову, то есть располагает элементы в том же массиве в обратном порядке. Рассмотрим на примере массива с числами:
+
+const numbers = [0, 1, 2, 3, 4];
+const reversedNumbers = numbers.reverse();
+
+console.log(reversedNumbers); // [4, 3, 2, 1, 0]
+console.log(numbers); // [4, 3, 2, 1, 0]
+// ...
+Так как элементы переставляются в исходном массиве, результат работы метода — ссылка на этот исходный массив:
+
+// ...
+console.log(numbers === reversedNumbers); // true
+Такие методы ещё называют мутирующими, и чтобы избежать неожиданных мутаций, используют метод .slice():
+
+const numbers = [0, 1, 2, 3, 4];
+const reversedNumbers = numbers.slice().reverse();
+
+console.log(reversedNumbers); // [4, 3, 2, 1, 0]
+console.log(numbers); // [0, 1, 2, 3, 4]
+console.log(numbers === reversedNumbers); // false
