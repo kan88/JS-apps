@@ -69,3 +69,14 @@ const films = [
   });
   
   console.log(titles); // ["Die hard", "Terminator"]
+
+  Метод .concat() используется для склеивания двух и более массивов в один.
+
+первый_массив.concat(второй_массив[, третий_массив])
+
+const ivanFavoriteFilms = ['Die hard', 'Terminator'];
+const mariaFavoriteFilms = ['Kindergarten Cop'];
+
+const favoriteFilms = ivanFavoriteFilms.concat(mariaFavoriteFilms);
+
+console.log(favoriteFilms); // ['Die hard', 'Terminator', 'Kindergarten Cop']
