@@ -1,13 +1,3 @@
-let initialWeight = 6000; // Исходный вес в граммах
-let targetWeight = 5000; // Желанный вес в граммах
-let days = 0;
-
-while (targetWeight < initialWeight) {
-  initialWeight = initialWeight*0.95;
-  days++;
-  console.log(days)
-}
-
 /* Техническое задание
 
 Мяу! Меня утомляют диета и тренировки, поэтому я хочу узнать, сколько ещё дней осталось заниматься, чтобы добиться нужного веса к мероприятию.
@@ -19,3 +9,14 @@ while (targetWeight < initialWeight) {
 Просто посчитай, сколько дней понадобится провести в таком режиме и запиши количество в переменную days.
 
 */
+
+let initialWeight = 6000; // Исходный вес в граммах
+let targetWeight = 5000; // Желанный вес в граммах
+let days = 0;
+
+while (targetWeight < initialWeight) {
+  initialWeight = initialWeight*0.95;
+  days++;
+  console.log(days)
+}
+

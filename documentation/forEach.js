@@ -11,11 +11,11 @@ NAMES.forEach((elem) => {
 "Alena"
 
 
-const NAMES = ['Lena', 'Alena']
+// const NAMES = ['Lena', 'Alena']
 
-NAMES.forEach((elem, i, array) => {
-    console.log(i)
-})
+// NAMES.forEach((elem, i, array) => {
+//     console.log(i)
+// })
 
-0
-1
+// 0
+// 1

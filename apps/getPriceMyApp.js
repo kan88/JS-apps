@@ -1,19 +1,3 @@
-let price = 1500
-const getPrice = (time, urgency) => {
-if (urgency) {
-  time = time / 2;
-  price = price * 2.5;
-  if (time > 150) {
-  price = price - 250;
-  return time * price;
-  }
-  }
-if (time > 150) {
-  price = price - 250;
-  return time * price;
-  }
-return time * price;
-}
 
 /* Техническое задание
 
@@ -35,3 +19,20 @@ return time * price;
 В первую очередь проверяй срочность. Функция должна возвращать стоимость проекта.
 
 */
+
+let price = 1500
+const getPrice = (time, urgency) => {
+if (urgency) {
+  time = time / 2;
+  price = price * 2.5;
+  if (time > 150) {
+  price = price - 250;
+  return time * price;
+  }
+  }
+if (time > 150) {
+  price = price - 250;
+  return time * price;
+  }
+return time * price;
+}
