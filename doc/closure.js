@@ -14,14 +14,14 @@ console.log(calc());
 //при простом вызове функции createCalcFunction(42) выдаст нам внутреннюю функцию
 // если запишем в переменную и вызовем тогда внутрянняя функция отработает
 
-function createIncrement (incrementor) {
-    return function(n) {
-        return n + incrementor
-    }
-}
+// function createIncrement (incrementor) {
+//     return function(n) {
+//         return n + incrementor
+//     }
+// }
 
-const addOne = createIncrement(1)
+// const addOne = createIncrement(1)
 
-console.log(addOne(5))
+// console.log(addOne(5))
 
-6
+// 6
