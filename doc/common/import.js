@@ -29,3 +29,28 @@ const name = 'Eve';
 export {name as motherName};
 // Файл сain.js
 import {motherName} from './mother.js';
+
+
+Переименованный экспорт и импорт по умолчанию
+Если вдруг вам нужно экспортировать переменную как default, а писать export default myVar почему-то не хочется, можно воспользоваться уже знакомым синтаксисом переименования:
+
+// Файл mother.js
+const mother = {
+  name: 'Eve',
+  age: 18,
+  sex: 'female',
+};
+
+export {mother as default};
+Никаких отличий или преимуществ, кроме лишних скобок и выражения as, в этом способе нет.
+
+Аналогичный способ можно использовать при импорте:
+
+// Файл mother.js
+export default {
+  name: 'Eve',
+  age: 18,
+  sex: 'female',
+};
+// Файл сain.js
+import {default as mother} from './mother.js';

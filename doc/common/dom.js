@@ -60,7 +60,7 @@ const document = {
 {
     /*...*/
     a: {
-        href: '#',
+        href: '#'
         target: '_blank',
         textContent: 'Ссылка'
     }
