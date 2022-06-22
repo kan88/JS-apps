@@ -65,3 +65,26 @@ textarea.oninput = function () {
   // Выведем данные из поля ввода
   console.log(textarea.value);
 };
+
+let text = 'Я люблю JavaScript';
+console.log(text.length); // Выведет: 18
+
+let textarea = document.querySelector('textarea');
+console.log(textarea.value); // Выведет: Кекс
+console.log(textarea.value.length); // Выведет: 4
+
+// Пользователи новостного сайта должны видеть, какой длины набранный ими текст. Чтобы вывести длину на страницу, изменим текстовое содержимое элемента с классом char-counter. Этот элемент находится прямо под полем ввода:
+
+<span class="text-counter">
+  Использовано <output class="char-counter">0</output>/142 символов
+</span>
+
+// Блокировать и разблокировать кнопку в JavaScript можно, присваивая булевы значения свойству disabled (по-английски значит «отключён») этой кнопки. Если присвоено значение true, то кнопка заблокирована, а если false — разблокирована.
+
+let button = document.querySelector('button');
+
+// Блокирует кнопку
+button.disabled = true;
+
+// Разблокирует кнопку
+button.disabled = false;
