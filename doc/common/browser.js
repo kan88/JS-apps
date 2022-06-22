@@ -110,3 +110,44 @@ for (var i = 0; i < array.length; i++) {
     var item = createCard(array[i]);
     list.appendChild(item);
   }
+
+  let elements = document.querySelectorAll('p');
+
+  console.log(elements[0]); // Выведет первый элемент коллекции
+  console.log(elements[1]); // Выведет второй элемент коллекции
+
+  tooltipButtons[0].onclick = function () {
+    tooltip.classList.add('opened');
+  };
+  
+  tooltipButtons[1].onclick = function () {
+    tooltip.classList.add('opened');
+  };
+
+  //   Атрибуты, начинающиеся с data-, обычно используют, чтобы хранить вспомогательную информацию. Подробнее о них вы можете почитать здесь.
+
+  // Как получить значение такого атрибута в JavaScript? Для этого используют свойство dataset, после которого указывают имя атрибута без префикса data-:
+
+  // элемент.dataset.имяАтрибутаБезПрефикса
+
+  // <p>Конструкторы лаборатории <button class="tooltip-button" type="button" data-tooltip-text="так себе лаборатория">DogDrones.inc</button> заверили, что их дроны не могут быть переносчиками опасных вирусов, так как это не заложено в их программу. <button class="tooltip-button" type="button" data-tooltip-text="но это не точно, - прим. юриста">Возможно</button>, истинная причина в том, что дроны лаборатории не способны переносить вообще ничего.</p>
+console.log(tooltipButtons[0].dataset.tooltipText)
+
+let tooltip = document.querySelector('.tooltip');
+let closeButton = document.querySelector('.close-button');
+let tooltipButtons = document.querySelectorAll('.tooltip-button');
+let tooltipText = document.querySelector('.tooltip-text')
+
+tooltipButtons[0].onclick = function () {
+ tooltipText.textContent = tooltipButtons[0].dataset.tooltipText
+  tooltip.classList.add('opened');
+};
+
+tooltipButtons[1].onclick = function () {
+  tooltipText.textContent = tooltipButtons[1].dataset.tooltipText
+  tooltip.classList.add('opened');
+};
+
+closeButton.onclick = function () {
+  tooltip.classList.remove('opened');
+};
