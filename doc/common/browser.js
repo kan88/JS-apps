@@ -98,3 +98,15 @@ var makeElement = (tagName, className, text) => {
       }
       return element
     }
+// Чтобы картинка отобразилась на странице, нужно задать ей адрес файла с изображением, то есть значение атрибута src. Значением этого атрибута можно управлять с помощью одноимённого свойства DOM-элемента:
+
+var picture = document.createElement('img');
+picture.src = 'images/picture.jpg'
+picture.alt = 'Непотопляемая селфи-палка';
+
+//добавление карточки из массива
+
+for (var i = 0; i < array.length; i++) {
+    var item = createCard(array[i]);
+    list.appendChild(item);
+  }
