@@ -5,7 +5,7 @@ const obj = {
   
   console.log(obj.a); // 1
   console.log(obj['b']); // 'какая-то строка'
-  Фундаментальное отличие ссылочных типов от примитивных можно проиллюстрировать следующим кодом:
+  // Фундаментальное отличие ссылочных типов от примитивных можно проиллюстрировать следующим кодом:
   
   let a = 1;
   let b = a;
@@ -21,7 +21,7 @@ const obj = {
   console.log(object.a); // 2
   console.log(anotherObject.a); // 2
   // Мы изменяли object.a, но изменилось ещё и anotherObject.a
-  И дело не в let, с const результат будет тот же:
+  // И дело не в let, с const результат будет тот же:
   
   const object = {a: 1};
   const anotherObject = object;

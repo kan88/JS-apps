@@ -1,3 +1,3 @@
-API - application programm interface
+// API - application programm interface
 
-набор функций например метод пуш или форич
+// набор функций например метод пуш или форич

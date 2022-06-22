@@ -16,8 +16,8 @@ const isTaskRepeating = (repeating) => {
    return  values.some((item) => item === true)
 }
 
-вернет массив false false false
+// вернет массив false false false
 
-мотед every протовиположный
+// мотед every протовиположный
 
-predicat: return true or false
+// predicat: return true or false
